@@ -1,0 +1,2 @@
+com/dj/automation/MyCalculatorTest.java
+ com.dj.automation.MyCalculatorTest

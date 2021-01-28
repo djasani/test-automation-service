@@ -1,0 +1,48 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:2.4.2"
+    }
+}
+
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+
+
+group 'com.dj.automation'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+
+}
+
+dependencies {
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    implementation 'org.junit.jupiter:junit-jupiter-engine:5.6.0'
+    implementation("org.junit.platform:junit-platform-engine:1.6.1")
+    implementation("org.junit.platform:junit-platform-launcher:1.6.1")
+    compile group: 'org.junit.platform', name: 'junit-platform-commons', version: '1.7.0'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.4.0'
+
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+
+bootJar {
+    enabled = false
+}
+jar {
+    enabled=true
+    archiveFileName="project.jar"
+}

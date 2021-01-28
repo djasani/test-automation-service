@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.dj.automation.MyCalculatorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-01-28T16:31:25" hostname="Dharmeshs-Mini.fios-router.home" time="0.066">
+  <properties/>
+  <testcase name="additionTest()" classname="com.dj.automation.MyCalculatorTest" time="0.056"/>
+  <testcase name="substractionTest()" classname="com.dj.automation.MyCalculatorTest" time="0.003"/>
+  <testcase name="MultiplicationTest()" classname="com.dj.automation.MyCalculatorTest" time="0.003"/>
+  <system-out><![CDATA[11:31:25.231 [Test worker] INFO com.dj.automation.MyCalculatorTest - My Addition Test Passed
+11:31:25.263 [Test worker] INFO com.dj.automation.MyCalculatorTest - My Substraction Test passed
+11:31:25.268 [Test worker] INFO com.dj.automation.MyCalculatorTest - My Multiplication Test passed
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
